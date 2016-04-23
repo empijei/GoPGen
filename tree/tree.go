@@ -1,13 +1,13 @@
 package gopgen
 
 type Tree struct {
-	Branches      []TreeNode
-	liveTreeNodes []TreeNode
+	liveTreeNodes []*TreeNode
+	Root          *TreeNode
 }
 
 type TreeNode struct {
 	X, Y, Z  float64
-	Children []TreeNode
+	Children []*TreeNode
 }
 
 type branchFactor struct {
